@@ -46,7 +46,7 @@ export default class App extends Component {
           </div>
           <div className={style.big}>
             <div className={style.listItem}>
-              <p>
+              <p className={style.me}>
                 I'm a transportation researcher who studies urban economics and
                 traffic theory. I also do a lot of data visualization in JavaScript. I'm from
                 Birmingham, Alabama.
