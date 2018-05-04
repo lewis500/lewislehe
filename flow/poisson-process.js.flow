@@ -1,0 +1,13 @@
+//@flow
+declare module 'poisson-process' {
+    declare export interface PoissonInstance {
+      start: () => void,
+      stop: () => void,
+    }
+  
+    declare export function create(meanMS: number, f: () => any): PoissonInstance;
+  
+    declare export function sample(mean: number): number;
+    
+    declare export var version: string;
+  }
