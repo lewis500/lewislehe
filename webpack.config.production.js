@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 var definePlugin = new webpack.DefinePlugin({
   __NODE_ENV__: JSON.stringify("production")
 });
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname,
@@ -27,7 +28,8 @@ module.exports = {
       template: resolve(__dirname, "src", "index.html"),
       filename: resolve(__dirname, "index.html")
     }),
-    definePlugin
+    definePlugin,
+    new ExtractTextPlugin("styles.css")
   ],
   module: {
     rules: [
@@ -39,11 +41,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        // exclude: /node_modules/,
-        use: [
-          "style-loader",
-          "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]"
-        ]
+        exclude: /node_modules/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use:
+            "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]"
+        })
       }
     ]
   },
@@ -52,6 +55,6 @@ module.exports = {
     alias: {
       src: resolve(__dirname, "src")
     },
-    extensions: [".js", ".json", ".scss"]
+    extensions: [".js", ".json"]
   }
 };
