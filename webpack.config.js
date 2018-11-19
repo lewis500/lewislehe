@@ -1,5 +1,4 @@
 const { resolve } = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -11,12 +10,6 @@ module.exports = {
     path: resolve(__dirname, "public"),
     publicPath: "/",
     filename: "[name].js"
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all"
-    },
-    runtimeChunk: true
   },
   mode: "development",
   plugins: [

@@ -37,17 +37,13 @@ export default class App extends Component {
             </div>
             <div className={style.details}>
               <div>Lewis Lehe</div>
-              <div>Berkeley, CA</div>
-              <div>lewis500 at berkeley dot edu</div>
-              <a href="./cv.pdf" target="__blank" className={style.cv}>
-                Cirriculum Vitae
-              </a>
+              <div>lehe at illinois dot edu</div>
             </div>
           </div>
           <div className={style.big}>
             <div className={style.listItem}>
               <p className={style.me}>
-                In October 2018, I'll be starting as assistant professor in the department of Civil and Environmental Engineering at University of Illinois, Urbana-Champaign. I study transportation economics and engineering. I'm from
+                I'm a assistant professor in the Transportation Systems group in the department of Civil and Environmental Engineering at University of Illinois, Urbana-Champaign. I study transportation economics and engineering. I'm from
                 Birmingham, Alabama.
               </p>
             </div>
@@ -91,13 +87,14 @@ export default class App extends Component {
             </div>
             <div className={style.listItem}>
               <div className={style.listTitle}>In-progress research</div>
-              <p>A technical history of downtown congestion pricing</p>
+              <p>Downtown congestion pricing in practice</p>
               <p>Downtown congestion pricing and equity</p>
               <p>
                 How minimum parking requirements make housing more expensive
-                (resubmit at&nbsp;
+                (forthcoming at&nbsp;
                 <span>Journal of Transport and Land Use</span>)
               </p>
+              <p>Driver earnings and taxi medallion values</p>
             </div>
 
             <div className={style.listItem}>
