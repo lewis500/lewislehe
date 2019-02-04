@@ -12,15 +12,15 @@ const Citation = ({ url, title, coauthor, journal, year }) => (
 
 const Vis = ({ url, imgUrl, title }) => (
   <div className={style.vis}>
-  <div style={{width: "80%"}}>
-    <a href={url} target="__blank">
-      <div
-        className={style.thumb}
-        style={{
-          backgroundImage: imgUrl
-        }}
-      />
-    </a>
+    <div style={{ width: "80%" }}>
+      <a href={url} target="__blank">
+        <div
+          className={style.thumb}
+          style={{
+            backgroundImage: imgUrl
+          }}
+        />
+      </a>
     </div>
     <div>{title}</div>
   </div>
@@ -43,8 +43,10 @@ export default class App extends Component {
           <div className={style.big}>
             <div className={style.listItem}>
               <p className={style.me}>
-                I'm a assistant professor in the Transportation Systems group in the department of Civil and Environmental Engineering at University of Illinois, Urbana-Champaign. I study transportation economics and engineering. I'm from
-                Birmingham, Alabama.
+                I'm a assistant professor in the Transportation Systems group in
+                the department of Civil and Environmental Engineering at
+                University of Illinois, Urbana-Champaign. I study transportation
+                economics and engineering. I'm from Birmingham, Alabama.
               </p>
             </div>
             <div className={style.listItem}>
@@ -84,17 +86,43 @@ export default class App extends Component {
                 coauthor=""
                 year="2017"
               />
+              <Citation
+                journal="Journal of Transport and Land Use"
+                title="How minimum parking requirements make housing more expensive"
+                url="https://jtlu.org/index.php/jtlu/article/view/1340/1188"
+                coauthor=""
+                year="2018"
+              />
+              <Citation
+                journal="Downtown congestion pricing in practice"
+                title="How minimum parking requirements make housing more expensive"
+                url="https://www.sciencedirect.com/science/article/pii/S0968090X18306983"
+                coauthor=""
+                year="2019"
+              />
             </div>
             <div className={style.listItem}>
               <div className={style.listTitle}>In-progress research</div>
-              <p>Downtown congestion pricing in practice</p>
-              <p>Downtown congestion pricing and equity</p>
               <p>
-                How minimum parking requirements make housing more expensive
-                (forthcoming at&nbsp;
-                <span>Journal of Transport and Land Use</span>)
+                Downtown congestion pricing with heterogeneous travelers and a
+                bus alternative.
               </p>
-              <p>Driver earnings and taxi medallion values</p>
+              <p>
+                Driver earnings and taxi medallions when taxi driver skill
+                varies
+              </p>
+              <p>
+                Using building ages to uncover the history of residential
+                development
+              </p>
+            </div>
+            <div className={style.listItem}>
+              <div className={style.listTitle}>Classes taught</div>
+              <p>Spring 2017. Public Transit Operations, UC Berkeley (grad)</p>
+              <p>
+                Spring 2019. Introduction to Transportation Engineering, UIUC
+                (undergrad)
+              </p>
             </div>
 
             <div className={style.listItem}>
