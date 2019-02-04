@@ -94,8 +94,8 @@ export default class App extends Component {
                 year="2018"
               />
               <Citation
-                journal="Downtown congestion pricing in practice"
-                title="How minimum parking requirements make housing more expensive"
+                journal="Transportation Research Part C: Emerging Technologies"
+                title="Downtown congestion pricing in practice"
                 url="https://www.sciencedirect.com/science/article/pii/S0968090X18306983"
                 coauthor=""
                 year="2019"
