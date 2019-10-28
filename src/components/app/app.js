@@ -127,6 +127,14 @@ export default class App extends Component {
 
             <div className={style.listItem}>
               <div className={style.listTitle}>Visualizations</div>
+              <div style={{ margin: "10px 0px" }}>
+                Visit {" "}
+                <a href="https://cee310.com">
+                  cee310.com
+                </a>
+                {" "} to see a series of interactives to reach the basics of transportation
+                engineering for the introductory undergrad course at UIUC.
+              </div>
               <div className={style.visRow}>
                 <Vis
                   url="https://ww2.kqed.org/lowdown/2013/11/12/traffic-waves/"
