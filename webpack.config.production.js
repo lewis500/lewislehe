@@ -20,7 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: resolve(__dirname, "src", "index.html"),
       filename: resolve(__dirname, "index.html")
-    }),
+    })
     // definePlugin,
   ],
   module: {
@@ -36,7 +36,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           "style-loader",
-          "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]"
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 2,
+              modules: true
+            }
+          }
         ]
       }
     ]
