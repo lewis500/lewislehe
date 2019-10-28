@@ -1,12 +1,16 @@
 {
-  "name": "stochasticity",
+  "name": "lewislehe",
   "version": "1.0.0",
-  "description": "simulation of traffic signals",
+  "description": "personal homepage",
   "author": "lewis500@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/lewis500/lewislehe"
+  },
   "scripts": {
     "dev": "webpack-dev-server --port=3080",
-    "build": "webpack --color --progress --config webpack.config.production.js"
+    "build": "webpack --config webpack.config.production.js"
   },
   "dependencies": {
     "react": "^16.11.0",

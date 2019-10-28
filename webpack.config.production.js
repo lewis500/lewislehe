@@ -12,14 +12,14 @@ module.exports = {
   },
   output: {
     path: resolve(__dirname, "public"),
-    publicPath: "public/",
+    publicPath: "./",
     filename: "[name].js"
   },
   mode: "production",
   plugins: [
     new HtmlWebpackPlugin({
       template: resolve(__dirname, "src", "index.html"),
-      filename: resolve(__dirname, "index.html")
+      filename: resolve(__dirname, "public", "index.html")
     })
     // definePlugin,
   ],
